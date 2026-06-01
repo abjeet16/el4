@@ -7,7 +7,7 @@ function App() {
   const [message, setMessage] = useState("");
 
   useEffect(() => {
-    fetch("http://localhost:8080/hello")
+    fetch("http://localhost:8081/hello")
         .then((response) => response.text())
         .then((data) => setMessage(data))
         .catch((error) => console.error(error));
